@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flight Price Prediction</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+<div class="img"></div>
+<form class="form">
+<h2>Airline</h2>
+<select class="scrollbar" name="" id="uiAirlines">
+<option value="" disabled="disabled" selected="selected">Choose a Comapany</option>
+		<option>AirAsia</option>
+        <option>GoFirst</option>
+		<option>Indigo</option>
+		<option>SpiceJet</option>
+		<option>StarAir</option>
+		<option>Trujet</option>
+		<option>Vistara</option>
+		</select>
+
+<h2>Departure </h2>
+<select class="scrollbar" name="" id="uiDeparture">
+<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Mumbai</option>
+        <option>Delhi</option>
+		<option>Hyderabad</option>
+		<option>Kolkata</option>
+		<option>Chennai</option>
+		</select>
+
+<h2>Destination </h2>
+<select class="scrollbar" name="" id="uiDestination">
+<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Mumbai</option>
+        <option>Delhi</option>
+		<option>Hyderabad</option>
+		<option>Kolkata</option>
+		<option>Chennai</option>
+		</select>
+
+<h2>Time</h2>
+<select class="scrollbar" name="" id="uiTime">
+<option value="" disabled="disabled" selected="selected">Choose a Time</option>
+		<option>Early Morning</option>
+    <option>Morning</option>
+    <option>Evening</option>
+		<option>Afternoon</option>
+		<option>Night</option>
+		</select>
+
+<h2>Class Type</h2>
+<div class="switch-field">
+		<input type="radio" id="cl_business" name="cltype" value="Business"/>
+		<label for="cl_business">Business</label>
+		<input type="radio" id="cl_economy" name="cltype" value="Economy" checked/>
+		<label for="cl_economy">Economy</label>
+	</div>
+
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</form>
+</body>
+</html>
